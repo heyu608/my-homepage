@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 第1页：首页 -->
+    <section class="section bg1 active">
+        <div class="content">
+            
+            <div class="avatar">
+                <img src="imgs/active.jpg" alt="头像">
+            </div>
+            <h1 class="name">你的名字</h1>
+            <p class="desc">个人主页描述</p>
+        </div>
+        <div class="arrow-down">↓</div>
+    </section>
+
+    <!-- 第2页：成长经历 -->
+    <section class="section bg2">
+        <div class="content">
+            <h1 class="name">成长经历</h1>
+            <p class="desc">你的经历描述</p>
+        </div>
+    </section>
+
+    <!-- 第3页：技能/爱好 -->
+    <section class="section bg3">
+        <div class="content">
+            <h1 class="name">技能 & 爱好</h1>
+            <p class="desc">你的技能和爱好描述</p>
+        </div>
+    </section>
+
+    <!-- 第4页：相册 -->
+    <section class="section bg4">
+        <div class="content album-page">
+            <h1 class="name">日常记录</h1>
+            <div class="album-container">
+                <button class="album-btn prev-btn">&lt;</button>
+                <div class="album-img-wrap">
+                    <!-- 相册第一张图路径 -->
+                    <img id="album-img" src="imgs/album1.jpg" alt="日常照片">
+                </div>
+                <button class="album-btn next-btn">&gt;</button>
+            </div>
+            <div class="album-dots">
+                <span class="album-dot active" data-num="0"></span>
+                <span class="album-dot" data-num="1"></span>
+                <span class="album-dot" data-num="2"></span>
+                <span class="album-dot" data-num="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-btn active" data-index="0">首页</div>
+        <div class="nav-btn" data-index="1">经历</div>
+        <div class="nav-btn" data-index="2">技能</div>
+        <div class="nav-btn" data-index="3">相册</div>
+    </nav>
+
+    <!-- 右侧圆点导航 -->
+    <div class="side-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
